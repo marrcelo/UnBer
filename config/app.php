@@ -177,6 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         DevDojo\Chatter\ChatterServiceProvider::class,
+        ValidadorCpf\CpfServiceProvider54::class,
 
     ],
 

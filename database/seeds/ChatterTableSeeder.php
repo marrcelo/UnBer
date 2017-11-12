@@ -20,6 +20,7 @@ class ChatterTableSeeder extends Seeder
                     'id'             => 1,
                     'name'           => 'Tony Lea',
                     'email'          => 'tony@hello.com',
+                    'cpf'            => '12345678901',
                     'password'       => '$2y$10$9ED4Exe2raEeaeOzk.EW6uMBKn3Ib5Q.7kABWaf4QHagOgYHU8ca.',
                     'remember_token' => 'RvlORzs8dyG8IYqssJGcuOY2F0vnjBy2PnHHTX2MoV7Hh6udjJd6hcTox3un',
                     'created_at'     => '2016-07-29 15:13:02',
@@ -37,9 +38,9 @@ class ChatterTableSeeder extends Seeder
                 'id'         => 1,
                 'parent_id'  => null,
                 'order'      => 1,
-                'name'       => 'Introductions',
+                'name'       => 'Ensino Fundamental',
                 'color'      => '#3498DB',
-                'slug'       => 'introductions',
+                'slug'       => 'ensino fundamental',
                 'created_at' => null,
                 'updated_at' => null,
             ],
@@ -47,9 +48,9 @@ class ChatterTableSeeder extends Seeder
                 'id'         => 2,
                 'parent_id'  => null,
                 'order'      => 2,
-                'name'       => 'General',
+                'name'       => 'Ensino Medio',
                 'color'      => '#2ECC71',
-                'slug'       => 'general',
+                'slug'       => 'ensino medio',
                 'created_at' => null,
                 'updated_at' => null,
             ],
@@ -57,22 +58,13 @@ class ChatterTableSeeder extends Seeder
                 'id'         => 3,
                 'parent_id'  => null,
                 'order'      => 3,
-                'name'       => 'Feedback',
+                'name'       => 'Ensino Superior',
                 'color'      => '#9B59B6',
-                'slug'       => 'feedback',
+                'slug'       => 'ensino superior',
                 'created_at' => null,
                 'updated_at' => null,
             ],
-            3 => [
-                'id'         => 4,
-                'parent_id'  => null,
-                'order'      => 4,
-                'name'       => 'Random',
-                'color'      => '#E67E22',
-                'slug'       => 'random',
-                'created_at' => null,
-                'updated_at' => null,
-            ],
+            
         ]);
 
         // CREATE THE DISCUSSIONS
@@ -120,19 +112,6 @@ class ChatterTableSeeder extends Seeder
                 'color'               => '#8e1869',
             ],
             3 => [
-                'id'                  => 8,
-                'chatter_category_id' => 4,
-                'title'               => 'Just a random post',
-                'user_id'             => 1,
-                'sticky'              => 0,
-                'views'               => 0,
-                'answered'            => 0,
-                'created_at'          => '2016-08-18 14:46:38',
-                'updated_at'          => '2016-08-18 14:46:38',
-                'slug'                => 'just-a-random-post',
-                'color'               => '',
-            ],
-            4 => [
                 'id'                  => 9,
                 'chatter_category_id' => 2,
                 'title'               => 'Welcome to the Chatter Laravel Forum Package',
@@ -184,40 +163,6 @@ class ChatterTableSeeder extends Seeder
                 'updated_at' => '2016-08-18 14:42:29',
             ],
             3 => [
-                'id'                    => 7,
-                'chatter_discussion_id' => 8,
-                'user_id'               => 1,
-                'body'                  => '<p>This is just a random post to show you some of the formatting that you can do in the WYSIWYG editor. You can make your text <strong>bold</strong>, <em>italic</em>, or <span style="text-decoration: underline;">underlined</span>.</p>
-        <p style="text-align: center;">Additionally, you can center align text.</p>
-        <p style="text-align: right;">You can align the text to the right!</p>
-        <p>Or by default it will be aligned to the left.</p>
-        <ul>
-        <li>We can also</li>
-        <li>add a bulleted</li>
-        <li>list</li>
-        </ul>
-        <ol>
-        <li><span style="line-height: 1.6;">or we can</span></li>
-        <li><span style="line-height: 1.6;">add a numbered list</span></li>
-        </ol>
-        <p style="padding-left: 30px;"><span style="line-height: 1.6;">We can choose to indent our text</span></p>
-        <p><span style="line-height: 1.6;">Post links: <a href="https://devdojo.com" target="_blank">https://devdojo.com</a></span></p>
-        <p><span style="line-height: 1.6;">and add images:</span></p>
-        <p><span style="line-height: 1.6;"><img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" alt="" width="300" height="300" /></span></p>',
-                'created_at' => '2016-08-18 14:46:38',
-                'updated_at' => '2016-08-18 14:46:38',
-            ],
-            4 => [
-                'id'                    => 8,
-                'chatter_discussion_id' => 8,
-                'user_id'               => 1,
-            'body'                      => '<p>Haha :) Cats!</p>
-        <p><img src="https://media.giphy.com/media/5Vy3WpDbXXMze/giphy.gif" alt="" width="250" height="141" /></p>
-        <p><img src="https://media.giphy.com/media/XNdoIMwndQfqE/200.gif" alt="" width="200" height="200" /></p>',
-            'created_at' => '2016-08-18 14:55:42',
-            'updated_at' => '2016-08-18 15:45:13',
-        ],
-        5 => [
             'id'                    => 9,
             'chatter_discussion_id' => 9,
             'user_id'               => 1,
