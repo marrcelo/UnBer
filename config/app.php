@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         DevDojo\Chatter\ChatterServiceProvider::class,
         ValidadorCpf\CpfServiceProvider54::class,
+        LaravelLegends\PtBrValidator\ValidatorProvider::class
 
     ],
 
