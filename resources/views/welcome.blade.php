@@ -14,16 +14,22 @@
         <style>
             html, body {
                 background-color: #fff;
+                background-image: url("https://user-images.githubusercontent.com/32500464/33210456-73c336cc-d101-11e7-8ad0-1dd72a2de52d.jpeg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: 33% 50%;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
-            }
+            } 
+
 
             .full-height {
                 height: 100vh;
             }
+
 
             .flex-center {
                 align-items: center;
@@ -37,36 +43,69 @@
 
             .top-right {
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                width:100%;
+                text-align: right;
+                right: 0px;
+                top: 0px;
+                border-top-style: solid;
+                border-top-color: black;
+                border-right-style: solid;
+                border-left-style: solid;
+                border-bottom-style: solid;
+            border-bottom-color: black;
+                background-color:black;
+                padding:20px 03px 20px 03px;
+            }
+
+            .top-right a:hover {
+        background-color:#F8F8FF;
+            color:black;
+            padding: 20px;
             }
 
             .content {
                 text-align: center;
+                color: #FFFFFF;
             }
 
             .title {
-                font-size: 84px;
+                font-size: 100px;
+                
             }
 
             .links > a {
-                color: #636b6f;
-                padding: 0 25px;
+                color: #ffffff;
+                padding: 30px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                width:100%;
+
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
+            .titulo{
+                color: #000000;
+                font-size: 100px;      
+                letter-spacing: .1rem;
+                text-decoration: none;
             }
+
+            .p {
+                color: #000000;
+                text-align: center;
+                font-weight:600;
+                font-family: 'Raleway', sans-serif;
+                letter-spacing: .1rem;
+               }
+            
         </style>
     </head>
+
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+                @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">UnBer</a>
@@ -76,14 +115,11 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                     
-                    <a href="{{ url('/home') }}">UnBer</a>
-                    
-                </div>
+            <div class="content">  
+                    <a class="titulo" href="{{ url('/home') }}">UnBer</a>                 
+                <p class="p">Mestres ensinando mestres</p>
             </div>
         </div>
+        
     </body>
 </html>
